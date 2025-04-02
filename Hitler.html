@@ -25,18 +25,24 @@
                     <li><h3><a href="#Legado" style="text-decoration: none; color: black;">Legado</a></h3></li><!--Contenido con enlace A, quitándole el estilo de enlace y dejándolo de color negro-->  
                 </ul>
             </section>
-            <div class="ImagenDerecha">
-                <a href="https://www.youtube.com/watch?v=3RCW8LbMQ9k"> <!--añade un enlace al clickear la imagen-->
-                    <div class="DescripcionImagen">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Adolf_Hitler_cropped_restored.jpg/220px-Adolf_Hitler_cropped_restored.jpg" 
-                        alt="Retrato de Adolf Hitler (1937)" 
-                        title="Retrato de Adolf Hitler 1937"
-                        height="300" width="300"><!--Propiedades de la imagen insertada-->
-                        <p class="Descripcion">Retrato de Adolf Hitler (1937).</p> <!-- Descripción debajo de la imagen -->
-                    </div>
-                </a> 
+            <div class="Bordado">
+                <div class="ImagenDerecha">
+                    <a href="https://www.youtube.com/watch?v=3RCW8LbMQ9k"> <!--añade un enlace al clickear la imagen-->
+                        <div class="DescripcionImagen">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Adolf_Hitler_cropped_restored.jpg/220px-Adolf_Hitler_cropped_restored.jpg" 
+                            alt="Retrato de Adolf Hitler (1937)" 
+                            title="Retrato de Adolf Hitler 1937"
+                            height="300" width="300"><!--Propiedades de la imagen insertada-->
+                            
+                            <div class="Descripcion">
+                                <p>
+                                    Retrato de Adolf Hitler (1937).
+                                </p>
+                            </div>
+                        </div>
+                    </a> 
+                </div>
             </div>
-            
         </div>
 
         <hr><!--linea horizontal-->
@@ -96,7 +102,7 @@
             <div class="ContenedorRedondo">
                 <section class="Caida">
                     <h3 style="margin-left: 20px;"><u>Caida</u></h3> <!--titulo-->
-                        <p ><!--Parrafo con margenes-->
+                        <p >
                             El <strong>22 de junio de 1941</strong>, aún sin doblegar a Inglaterra, tres millones de soldados alemanes atacaron la Unión Soviética, <!--Resalta el texto-->
                             rompiendo el pacto de no agresión que Hitler había firmado con Stalin dos años antes. <br><!--salto de linea-->
                             
@@ -150,14 +156,27 @@
                     Grupos violentos como el <strong>Ku Klux Klan</strong> y <strong>Nación Aria</strong> se proclaman seguidores de esta doctrina.
                 </p>
                 <div class="caja"></div>
+                <div class="Boton">
+                    <input type="button" value="Entrada al Infierno" onclick="window.location.href='https://arsmate.com/Vardoc'"> 
+                </div>
         <style>
-            body        {
-                            background-image: url('https://static.wikia.nocookie.net/nyancat/images/1/16/Nyan_cat_invasion_by_droneguard-d3lhiv6.gif/revision/latest/smart/width/386/height/259?cb=20110802010434');
-                            background-size:cover;
-                            background-repeat: no-repeat;
-                            background-attachment: fixed;
+            body    {
+                        background-image: url('https://static.wikia.nocookie.net/nyancat/images/1/16/Nyan_cat_invasion_by_droneguard-d3lhiv6.gif/revision/latest/smart/width/386/height/259?cb=20110802010434');
+                        background-size:cover;
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
                             
-                        } 
+                    } 
+            hr  {
+                    background-color: chocolate;
+                    height: 1;
+                    
+                }
+            p   {
+                    margin-left: 20px; 
+                    margin-top: 5px; 
+                    margin-bottom: 5px;
+                }
            .encabezado  {
                             width: 600px; /* Ancho del cuadro */
                             padding: 1px; /* Espaciado interno */
@@ -224,7 +243,6 @@
                         }
             .ImagenDerecha{
                             display: flex;
-                            
                             justify-content: flex-end;
                             align-items: stretch;
                             width: 100%;
@@ -246,30 +264,34 @@
                                     max-width: fit-content;
                                     box-sizing: border-box;
                                 }
+            .Bordado  {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    border: 2px solid #ccc; /* Borde alrededor de la imagen */
+                                    padding: 15px; /* Espaciado entre la imagen y el borde */
+                                    background-color: gold; /* Fondo claro detrás de la imagen */
+                                    width: 300%; /* Ancho del contenedor (ajusta el tamaño de la imagen y el borde) */
+                                    max-width: fit-content;
+                                    box-sizing: border-box;
+                                }
             .Descripcion{
-                            text-align: center;
+                            
                             background-color: wheat;
                             padding:10px;
-                            width: 90%;
+                            width: 100%;
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             box-sizing: border-box;
                         }
+
+
             .Descripcion p  {
-                                all: unset;
-     
+                                
+                                margin: 0;
+
                             }
-            hr {
-                    background-color: chocolate;
-                    height: 1;
-                    
-                }
-                p{
-                    margin-left: 20px; 
-                    margin-top: 5px; 
-                    margin-bottom: 5px;
-                }
             @keyframes portalEffect {
                                         0%  {
                                             transform: translateY(0);
@@ -297,11 +319,15 @@
                 background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjR_s7J4jVwJMQckZHi2DvMwGA3leWlqGe8A698xSBq4TXwzh2TjdsgLNNg-u-EQtljae9jGPfwS9cgbnDf89vxcx9UhbQvETOmUysW2ufl0n30uU1P5XDcIN-ej2ZEeETu7qK34HCAHyw/s1600/companionCubeRefImage.png');
                 background-size: cover;
                 position: fixed;
-                right: 100;
+                right: 100px;
                 top: 0;
                 animation: portalEffect 1s linear infinite;
             }
-
+            .Boton  {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
 
         </style>
         
